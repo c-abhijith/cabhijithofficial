@@ -1,0 +1,188 @@
+.home {
+    min-height: 100vh;
+    padding: 0;
+    background: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home__container {
+    width: 100%;
+    padding-left: 10rem;
+    max-width: 100%;
+}
+
+.home__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20% 0% 0% 0%;
+}
+
+.home__data {
+    width: 100%;
+    max-width: 800px;
+}
+
+.home__greeting-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.home__greeting {
+    font-size: 0.8rem; /* Small size */
+    color: #4caf50;   /* Green color */
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+.home__title {
+    font-size: 5rem; /* Big size */
+    color: #fff;     /* White color */
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.home__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.home__description {
+    font-size: 15px;
+    margin-bottom: 2rem;
+    max-width: 460px;
+    color: #888;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem; /* Adjusted padding */
+    border: 2px solid #25902b; /* White border */
+    background: transparent; /* Transparent button */
+    color: #25902b; /* White text */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+   
+}
+
+.button:hover {
+    background: #1eee25; /* Green background on hover */
+    color: #0d0c0c;         /* White text */
+    cursor: pointer;
+    border:black;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+    .home__container {
+        padding-left: 2rem;
+    }
+
+    .home__title {
+        font-size: 4rem;
+    }
+    .home__subtitle {
+        font-size: 1.3rem;
+       
+    }
+    
+
+    .button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home__container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .home__data {
+        padding-bottom: 16%;
+    }
+
+    .home__greeting {
+        font-size: 0.7rem;
+    }
+
+    .home__title {
+        font-size: 2.2rem;
+    }
+    .home__subtitle {
+        font-size: 0.9rem;
+        
+       
+    }
+    .home__description {
+        font-size: 10px;
+       
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home__container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .home__greeting {
+        font-size: 0.2rem;
+    }
+
+    .home__title {
+        font-size: 2.3rem;
+    }
+    .home__subtitle {
+        font-size: 0.8rem;
+       
+    }
+    .home__description {
+        font-size: 10px;
+        
+    }
+
+    .button {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+.home__description {
+    margin-bottom: 2rem;
+    max-width: 460px;
+    color: #888;
+  }
+  
+  @media screen and (max-width: 450px) {
+    .home__description {
+      font-size: 0.6rem; /* Slightly smaller font size */
+      line-height: 1.5; /* Increase line spacing */
+      width: 80%; /* Restrict width to 80% */
+      word-wrap: break-word; /* Break long words */
+      margin: 0; /* Remove any unnecessary margins */
+      padding: 0 10px; /* Add padding on the sides */
+      text-align: left; /* Align text to the left */
+    }
+  }
+  

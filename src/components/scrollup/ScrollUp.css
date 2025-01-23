@@ -1,0 +1,349 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* Base Styles */
+.resume-container,
+.social-links-container,
+.scrollup {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Resume Styles */
+.resume-container {
+    position: fixed;
+    top: 2rem;
+    right: 2.5rem;
+    z-index: var(--z-tooltip);
+    opacity: 1;
+    visibility: visible;
+    animation: slideInDown 0.6s ease forwards;
+}
+
+/* Resume Button Styles */
+.resume-link {
+    position: fixed;
+    top: 2rem;
+    right: -1.5rem;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 0.3s ease;
+    z-index: var(--z-tooltip);
+    font-family: 'Righteous', sans-serif;
+    position: relative;
+}
+
+.resume-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #4caf50;  
+    transition: width 0.3s ease;
+}
+
+.resume-link:hover {
+    color: #ffffff;  
+    transform: translateY(-3px);
+}
+
+.resume-link:hover::after {
+    width: 100%;  
+}
+
+/* Social Links Styles */
+.social-links-container {
+    position: fixed;
+    right: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: var(--z-tooltip);
+    animation: slideInRight 0.6s ease 0.3s forwards;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 0.8rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: scale(0);
+    animation: scaleIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s forwards;
+}
+
+/* Social Icons Styles */
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateX(20px);
+    position: relative;
+    border: 2px solid transparent;  /* Initial transparent border */
+    transition: border-color 0.3s ease-in-out;  /* Border color transition */
+}
+
+.social-icon-link:nth-child(1) { animation: slideInRight 0.5s ease 0.7s forwards; }
+.social-icon-link:nth-child(2) { animation: slideInRight 0.5s ease 0.8s forwards; }
+.social-icon-link:nth-child(3) { animation: slideInRight 0.5s ease 0.9s forwards; }
+
+.social-icon-link:hover {
+    transform: translateX(-5px);
+    background-color: rgb(65, 214, 36);
+}
+
+.social-icon-link:hover i {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+/* Add border animation on hover */
+.social-icon-link:hover {
+    border-color: rgb(65, 214, 36); /* Green border on hover */
+}
+
+.social-icon-link i {
+    font-size: 1.5rem;
+    color: rgb(237, 241, 236);
+    transition: all 0.3s ease;
+}
+
+/* Scroll Up Button Styles */
+.scrollup {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    z-index: var(--z-tooltip);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: bounceIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid transparent;  /* Initial border state */
+    transition: border-color 0.3s ease-in-out;  /* Border color transition */
+}
+
+/* Scroll Up Button Hover Effect */
+.scrollup:hover {
+    transform: translateY(-5px);
+    background-color: rgb(65, 214, 36);
+    box-shadow: 0 6px 20px rgba(65, 214, 36, 0.3);
+    border-color: rgb(65, 214, 36);  /* Border color changes on hover */
+}
+
+/* Scroll Up Icon Styles */
+.scrollup__icon {
+    font-size: 1.5rem;
+    color: rgb(65, 214, 36);
+    transition: all 0.3s ease;
+}
+
+.scrollup:hover .scrollup__icon {
+    color: #fff;
+    animation: bounce 1s infinite;
+}
+
+/* Animations */
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+        visibility: visible;
+    }
+    100% {
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+        visibility: visible;
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(0.89);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    .resume-container {
+        top: 1.5rem;
+        right: 2rem;
+    }
+
+    .social-links-container {
+        right: 2rem;
+    }
+
+    .social-icon-link {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .scrollup {
+        right: 2rem;
+    }
+
+    .resume-link {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resume-container {
+        top: 1.2rem;
+        right: 1.5rem;
+    }
+
+    .resume-link {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        right: -2.0rem;
+    }
+
+    .social-links-container {
+        right: 1.5rem;
+    }
+
+    .social-links {
+        padding: 1rem 0.6rem;
+        gap: 1rem;
+    }
+
+    .scrollup {
+        right: 1.5rem;
+        padding: 0.4rem;
+    }
+
+    .resume-container {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .resume-container.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .resume-container {
+        right: 1rem;
+    }
+
+    .resume-link {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        right: -1rem;
+    }
+
+    .social-links-container {
+        right: 1rem;
+    }
+
+    .social-icon-link {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .scrollup {
+        right: 1rem;
+        padding: 0.3rem;
+    }
+}
+
+/* Show them when in home section */
+.resume-container.show,
+.social-links-container.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Add to your existing CSS */
+.resume-link i {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.resume-link:hover i {
+    transform: translateY(2px);
+}

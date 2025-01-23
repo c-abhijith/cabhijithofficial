@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/abhi/static/css/main.de2b8ece.css",
+    "main.js": "/abhi/static/js/main.e03ad78c.js",
+    "index.html": "/abhi/index.html",
+    "main.de2b8ece.css.map": "/abhi/static/css/main.de2b8ece.css.map",
+    "main.e03ad78c.js.map": "/abhi/static/js/main.e03ad78c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de2b8ece.css",
+    "static/js/main.e03ad78c.js"
+  ]
+}

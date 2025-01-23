@@ -1,0 +1,69 @@
+/* src/components/ProjectCard.css */
+.project__card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+  
+.project__card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+
+
+/* src/components/ProjectCard.css */
+
+.card {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 13px;
+  }
+  
+ 
+ 
+  
+  .card-description {
+    margin-bottom: 20px;
+  }
+  
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    right: 16px;
+  }
+  
+  .left-button, .right-button {
+    padding: 5px 10px;
+    border: .1rem solid #8213c2 ;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .left-button {
+    background-color:transparent;
+    color: #8213c2;
+  }
+  
+  .right-button {
+    background-color: #8213c2;
+    color: rgb(228, 221, 221);
+  }
+  

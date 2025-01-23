@@ -1,0 +1,64 @@
+.footer {
+    position: relative;
+    background-color: #161616;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    overflow: hidden;
+}
+
+.footer__waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; /* Adjusted the height to 20px */
+    background: url('https://svgshare.com/i/p__W.svg') repeat-x;
+    animation: wave 5s infinite linear;
+    z-index: 0;
+}
+
+@keyframes wave {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.footer__content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer__title {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 1rem;
+}
+
+.footer__social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer__social-link {
+    color: #888;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer__social-link:hover {
+    color: #4caf50;
+}
+
+.footer__copy {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 1rem;
+}
