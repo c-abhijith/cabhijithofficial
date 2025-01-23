@@ -5,10 +5,6 @@ function App() {
     useEffect(() => {
         addConsoleMessage();
     }, []);
-
-    return (
-        // Your existing App content
-    );
 }
 
 export default App; 
