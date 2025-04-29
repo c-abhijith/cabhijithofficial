@@ -53,6 +53,28 @@ const projectsData = [
         "image": `${process.env.PUBLIC_URL}/assets/zwast.png`, 
         "git": "https://github.com/c-abhijith/Zwaste-BackEnd.git",
         "web": "https://youtu.be/ndbB3nIJwH8?si=KE_164j6IO_J7u-C"
+    },
+    {
+        "id": 6,
+        "title": "Recommendation System",
+        "keys": ["ML", "Streamlit", "Pandas"],
+        "description": "This machine learning project is a Recommendation System built using NumPy, Pandas, scikit-learn, and deployed with Streamlit for an interactive web interface. It analyzes user preferences and item features to provide personalized suggestions. The system leverages techniques like collaborative filtering and content-based filtering, making it efficient and user-friendly for real-time recommendations.",
+        "category": ["Python", "ML"],
+        "image": `${process.env.PUBLIC_URL}/assets/todo.png`,
+        "git": "https://github.com/c-abhijith/Todo-APP.git",
+        "web": "https://c-abhijith.github.io/Todo-App/",
+        "video":""
+    },
+    {
+        "id": 7,
+        "title": "EchoBlog",
+        "keys": ["Fast API", "React", "Tailwindcss"],
+        "description": "This machine learning project is a Recommendation System built using NumPy, Pandas, scikit-learn, and deployed with Streamlit for an interactive web interface. It analyzes user preferences and item features to provide personalized suggestions. The system leverages techniques like collaborative filtering and content-based filtering, making it efficient and user-friendly for real-time recommendations.",
+        "category": ["Python", "js"],
+        "image": `${process.env.PUBLIC_URL}/assets/todo.png`,
+        "git": "https://github.com/c-abhijith/Todo-APP.git",
+        "web": "https://c-abhijith.github.io/Todo-App/",
+        "video":""
     }
   ]
   

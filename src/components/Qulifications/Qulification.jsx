@@ -36,14 +36,14 @@ export default function Qualification() {
                     {/* Education Section */}
                     <div className={`qualification__content ${toggleState === 1 ? 'active-content' : ''}`}>
                         <div className="timeline">
-                            <div className="timeline__item left">
+                            {/* <div className="timeline__item left">
                                 <div className="timeline__content">
                                     <div className="timeline__period">2024 - Present</div>
                                     <div className="timeline__marker"></div>
                                     <h3>MCA</h3>
                                     <p>JAIN (Kochi)</p>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="timeline__item right">
                                 <div className="timeline__content">

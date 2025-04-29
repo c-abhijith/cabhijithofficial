@@ -23,7 +23,7 @@ export const Project = () => {
             <span className="section__subtitle">Knowledge, Growth, Innovation</span>
 
             <div className="project__filters">
-                {['All', 'Web', 'Python', 'JS'].map((category) => (
+                {['All', 'ML', 'Python', 'JS'].map((category) => (
                     <button
                         key={category}
                         onClick={() => filterProjects(category)}

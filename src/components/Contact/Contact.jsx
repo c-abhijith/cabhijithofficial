@@ -99,7 +99,7 @@ export default function Contact() {
                     <h3 className="contact__title">Write me your project</h3>
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Name</label>
+                            {/* <label className="contact__form-tag">Name</label> */}
                             <input type="text" 
                                 className="contact__form-input"
                                 name="name" placeholder='Enter your name'
@@ -107,7 +107,7 @@ export default function Contact() {
                         </div>
 
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Mail ID</label>
+                            {/* <label className="contact__form-tag">Mail ID</label> */}
                             <input type="email" 
                                 className="contact__form-input"
                                 name="email" placeholder='Enter your email'
@@ -115,7 +115,7 @@ export default function Contact() {
                         </div>
 
                         <div className="contact__form-div contact__form-area">
-                            <label className="contact__form-tag">Message</label>
+                            {/* <label className="contact__form-tag">Message</label> */}
                             <textarea name="project" cols="30"
                                 rows="10" className='contact__form-input'
                                 placeholder='Write your message'

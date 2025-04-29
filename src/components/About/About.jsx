@@ -113,7 +113,7 @@ export default function About() {
                         </p>
                         
                         <p className="letter__content">
-                        With  <strong> 2+ years </strong> of experience, I've specialized in building scalable and efficient 
+                        With  <strong> 3+ years </strong> of experience, I've specialized in building scalable and efficient 
                         backend solutions. My work involves a deep understanding of  <strong>microservices</strong>, 
                         <strong>monolithic</strong> architectures,  <strong>WebSocket </strong> communication, and pub-sub systems,
                         enabling impactful software development.

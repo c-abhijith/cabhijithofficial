@@ -35,7 +35,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer__copy">
-                    <p>© 2024 Abhijith C. All rights reserved.</p>
+                    <p>© 2025 Abhijith C. All rights reserved.</p>
                 </div>
             </div>
         </footer>
